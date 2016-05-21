@@ -1,0 +1,17 @@
+<dom-module id="seed-app">
+	
+	<template>
+		<button type="button" is="p-button" icon="fa-external-link" onclick="document.getElementById('dlgelement').show()" >Show</button>
+ 
+		<p-dialog id="dlgelement" title="Dialog Header" modal showeffect="fade" hideeffect="fade" draggable resizable>
+		    <p>Finestra di dialogo PrimeUI</p>
+		</p-dialog>
+	</template>
+	
+	<script>		
+		Polymer({
+			is: "seed-app"
+		});	
+	</script>
+	
+</dom-module>

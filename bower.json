@@ -1,0 +1,24 @@
+{
+  "name": "polymer-primeui-seed",
+  "authors": [
+    "massimobiagioli <biagiolimassimo@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "primeui": "~4.1.11",
+    "x-tag-core": "~1.5.9",
+    "polymer": "~1.4.0",
+    "underscore": "~1.8.3"
+  }
+}
