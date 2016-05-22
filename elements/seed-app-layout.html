@@ -1,0 +1,58 @@
+<dom-module id="seed-app-layout">
+		
+	<template>				
+						
+		<!-- Main layout -->
+	    <paper-drawer-panel class="flex">
+	      
+	      <!-- Header -->
+	      <paper-header-panel drawer>
+	        <paper-toolbar>
+	          <div>Menu</div>
+	        </paper-toolbar>
+	        <div>
+				
+				<!-- Esempio di utilizzo di menu -->
+				<p-menu>
+				    <p-submenu value="File">
+				        <p-menuitem value="New" icon="fa-plus"></p-menuitem>
+				        <p-menuitem value="Open" icon="fa-download"></p-menuitem>
+				    </p-submenu>
+				    <p-submenu value="Edit">
+				        <p-menuitem value="Undo" icon="fa-refresh"></p-menuitem>
+				        <p-menuitem value="Close" icon="fa-close"></p-menuitem>
+				    </p-submenu>
+				</p-menu>
+				
+			</div>
+	      </paper-header-panel>
+	      
+	      <!-- Content -->
+	      <paper-header-panel main>
+	        <paper-toolbar>
+	          <paper-icon-button icon="menu" paper-drawer-toggle></paper-icon-button>
+	          <div>Principale</div>
+	        </paper-toolbar>
+	        <div>
+				
+				<!-- Esempio di utilizzo di TreeTable -->
+				<p-treetable nodes="App.data.treeDemo.nodes">
+				    <p-column field="name" headertext="Name"></p-column>
+				    <p-column field="size" headertext="Size"></p-column>
+				    <p-column field="type" headertext="Type"></p-column>
+				</p-treetable>
+				
+			</div>
+	      </paper-header-panel>
+	      
+	    </paper-drawer-panel>
+					
+	</template>
+	
+	<script>						
+		Polymer({
+			is: "seed-app-layout"			
+		});						
+	</script>
+	
+</dom-module>
